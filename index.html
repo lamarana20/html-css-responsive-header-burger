@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Blog articles and contact form">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header-links">
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="logo of the web page">
+        </div>
+         <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <!-- Button burger -->
+  <label for="menu-toggle" class="burger">
+    ☰
+  </label>
+        <nav aria-label="Main navigation">
+            <a href="/Home.html">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">login</a>
+            <a href="">Register</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>
+                    Article 1
+                </h2>
+                <time datetime="2003-12-01">
+                    <strong>Date:01/12/2003</strong>
+                </time>
+                <p>
+                       
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem unde earum. Minima aliquid, est, doloribus delectus, error dolorem repudiandae magni nemo saepe laboriosam placeat molestiae quia ex ipsum? Quidem!
+                
+                </p>
+            </article>
+            <article>
+                <h2>
+                    Article 2
+                </h2>
+                <time datetime="2004-12-01">
+                    <strong>Date:01/12/2004</strong>
+                </time>
+                <p>   
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem unde earum. Minima aliquid, est, doloribus delectus, error dolorem repudiandae magni nemo saepe laboriosam placeat molestiae quia ex ipsum? Quidem!
+                </p>
+
+            </article>
+            <article>
+                <h2>
+                    Article 3
+                </h2>
+                <time datetime="2005-12-01">
+                    <strong>Date:01/12/2005</strong>
+                </time>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem unde earum. Minima aliquid, est, doloribus delectus, error dolorem repudiandae magni nemo saepe laboriosam placeat molestiae quia ex ipsum? Quidem!
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>
+                Contact form
+            </h2>
+           
+            <form action="./submit" method="post">
+                 <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Name" required>
+                </div>
+                   <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="your email" required>
+                </div>
+                  <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+
+
+
+
+    <footer>
+        <p>follow us:</p>
+        <nav aria-label="social media links">
+        <a href="">facebook</a>
+        <a href="">X</a>
+        <a href="">LinkedIn</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

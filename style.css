@@ -1,0 +1,95 @@
+.header-links {
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+}
+
+.header-links nav {
+    display: flex;
+    gap: 30px;
+
+}
+
+.header-links nav a {
+    text-decoration: none;
+
+    text-transform: capitalize;
+    color: black;
+    transition: color 0.3s ease;
+
+}
+
+.header-links nav a:focus-visible {
+    outline: 2px solid #FFF;
+    outline-offset: 4px;
+}
+
+.header-links nav a:hover {
+    color: #3b82f6;
+}
+
+/* a::after {
+  content: "★ ";
+  color: gold;
+} */
+
+h2 {
+    position: sticky;
+    top: 30px;
+    background: white;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Cache la checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Style du burger */
+.burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+@media (max-width:768px) {
+    .header-links {
+
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .header-links nav {
+         display: none;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+       
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .menu-toggle:checked+.burger+nav {
+        display: flex;
+    }
+
+}
